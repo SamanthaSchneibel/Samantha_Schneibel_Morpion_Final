@@ -63,7 +63,8 @@ def is_board_filled(board):
                 return False
     return True
 
-def Morpion():
+def morpion():
+    global tableGame
     playerOne = input("Joueur X, entrez votre pseudo : \n")
     playerTwo = input("Joueur O, entrez votre pseudo : \n")
     playerOneShoot = "X"
@@ -108,11 +109,12 @@ def Morpion():
 
         correctShoot = False
     
-    otherGame = input("Voulez-vous rejouer ? oui ou non: ")
+    otherGame = input("Voulez-vous rejouer ? oui ou non : ")
     if otherGame == "oui":
+        tableGame = [['-','-','-'],['-','-','-'],['-','-','-']]
         print("C'est reparti !")
-        Morpion()
+        morpion()
     elif otherGame == "no":
         print("A bientôt !")
 
-Morpion()
+morpion()
