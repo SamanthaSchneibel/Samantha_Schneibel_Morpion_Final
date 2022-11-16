@@ -3,10 +3,12 @@ from random import randint
 tableGame = [['-','-','-'],['-','-','-'],['-','-','-']]
 
 def showTable(tableGame):
+    print("---------------")
     for row in tableGame:
         for item in row:
             print (item, end="  ")
         print()
+    print("---------------\n")
     
 def caseFilled(board, x, y):
     if board[x][y] == '-':
@@ -62,8 +64,8 @@ def is_board_filled(board):
     return True
 
 def Morpion():
-    playerOne = input("Joueur 1, entrez votre pseudo : ")
-    playerTwo = input("Joueur 2, entrez votre pseudo : ")
+    playerOne = input("Joueur X, entrez votre pseudo : \n")
+    playerTwo = input("Joueur O, entrez votre pseudo : \n")
     playerOneShoot = "X"
     playerTwoShoot = "O"
     playerStart = randint(1, 2)
@@ -77,12 +79,13 @@ def Morpion():
         playerShoot = playerTwoShoot
     correctShoot = False
     playerWin = False
+    
     showTable(tableGame)
     while playerWin == False:
         while correctShoot == False:
-            print("Tour de " + playerTurn)
-            choiceX = int(input("Ligne: "))
-            choiceY = int(input("Colonne: "))
+            print("Tour de " + playerTurn + "\n")
+            choiceX = int(input("Ligne: (ligne 1 = 0, ligne 2 = 1 et ligne 3 = 2 \n)"))
+            choiceY = int(input("Colonne: (colonne 1 = 0, colonne 2 = 1 et colonne 3 = 2 \n)"))
             if caseFilled(tableGame, choiceX, choiceY) != True:
                 tableGame[choiceX][choiceY] = playerShoot
                 correctShoot = True
