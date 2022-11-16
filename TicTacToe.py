@@ -1,7 +1,10 @@
+#on admet une fonction random
 from random import randint
 
+#créer un tableau vierge
 tableGame = [['-','-','-'],['-','-','-'],['-','-','-']]
 
+#définir une fonction showtable
 def showTable(tableGame):
     print("---------------")
     for row in tableGame:
