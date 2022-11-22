@@ -145,7 +145,7 @@ while continuer == True :
         if playerShoot == playerOneShoot:
             playerShoot = playerTwoShoot
             playerTurn = playerTwo
-        else : 
+        else: 
             playerShoot = playerOneShoot
             playerTurn = playerOne
 
