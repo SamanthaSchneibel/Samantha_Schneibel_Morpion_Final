@@ -96,7 +96,7 @@
                 #alors afficher ("\nTant pis, à une prochaine ! \n")
                 #alors continuer est faux
 
-#tant que la continuer est égal à vrai
+#tant que continuer est égal à vrai
     
     #créer une varaible playerOneShoot égale à X
     #créer une variable playerTwoShoot égal à O
@@ -149,7 +149,7 @@
         #alors afficher ("A bientôt !")
         #alors continuer est faux
     #sinon
-        #utiliser otherGame et lui associer le retour de l'exécution de la fonction input pour demander ("Voulez-vous rejouer ? oui ou non : \n")
+        #utiliser la variable otherGame et lui associer le retour de l'exécution de la fonction input pour demander ("Voulez-vous rejouer ? oui ou non : \n")
         #si otherGame est égal à oui
             #alors afficher ("C'est reparti !")
             #alors tableGame est égal à [['-','-','-'],['-','-','-'],['-','-','-']]
@@ -158,7 +158,7 @@
             #alors afficher ("A bientôt !")
             #alors continuer est faux
         #sinon
-            #utiliser otherGame et lui associer le retour de l'exécution de la fonction input pour demander ("Voulez-vous rejouer ? oui ou non : \n")
+            #utiliser la variable otherGame et lui associer le retour de l'exécution de la fonction input pour demander ("Voulez-vous rejouer ? oui ou non : \n")
             #si otherGame est égal à oui
                 #alors afficher ("C'est reparti !")
                 #alors tableGame est égal à [['-','-','-'],['-','-','-'],['-','-','-']]
