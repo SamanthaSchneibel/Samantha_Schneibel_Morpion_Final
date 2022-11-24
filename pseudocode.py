@@ -74,7 +74,7 @@
         #alors créer une variable continuer égale à vrai
         #alors créer une variable playerOne et lui associer le retour de l'exécution de la fonction input pour demander ("Joueur X choisissez votre pseudo : \n")
         #alors créer une variable plauerTwo et lui associer le retour de l'exécution de la fonction input pour demander ("Joueur O choisissez votre pseudo : \n")
-    #si startGame est égal à non
+    #sinon si startGame est égal à non
         #alors afficher ("\nTant pis, à une prochaine ! \n")
         #alors continuer est faux
     #sinon
@@ -83,7 +83,7 @@
             #alors créer une variable continuer égale à vrai
             #alors créer une variable playerOne et lui associer le retour de l'exécution de la fonction input pour demander ("Joueur X choisissez votre pseudo : \n")
             #alors créer une variable plauerTwo et lui associer le retour de l'exécution de la fonction input pour demander ("Joueur O choisissez votre pseudo : \n")
-        #si startGame est égal à non
+        #sinon si startGame est égal à non
             #alors afficher ("\nTant pis, à une prochaine ! \n")
             #alors continuer est faux
         #sinon
@@ -92,7 +92,7 @@
                 #alors créer une variable continuer égale à vrai
                 #alors créer une variable playerOne et lui associer le retour de l'exécution de la fonction input pour demander ("Joueur X choisissez votre pseudo : \n")
                 #alors créer une variable plauerTwo et lui associer le retour de l'exécution de la fonction input pour demander ("Joueur O choisissez votre pseudo : \n")
-            #si startGame est égal à non
+            #sinon si startGame est égal à non
                 #alors afficher ("\nTant pis, à une prochaine ! \n")
                 #alors continuer est faux
 
@@ -145,7 +145,7 @@
         #alors afficher ("C'est reparti !")
         #alors tableGame est égal à [['-','-','-'],['-','-','-'],['-','-','-']]
         #alors continuer est vrai
-    #si otherGame est égal à non
+    #sinon si otherGame est égal à non
         #alors afficher ("A bientôt !")
         #alors continuer est faux
     #sinon
@@ -154,7 +154,7 @@
             #alors afficher ("C'est reparti !")
             #alors tableGame est égal à [['-','-','-'],['-','-','-'],['-','-','-']]
             #alors continuer est vrai
-        #si otherGame est égal à non
+        #sinon si otherGame est égal à non
             #alors afficher ("A bientôt !")
             #alors continuer est faux
         #sinon
